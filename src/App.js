@@ -11,7 +11,7 @@ function App() {
     const [lastname, setLastname] = useState('');
     const [age, setAge] = useState(0);
     const [zipcode, setZipcode] = useState('');
-    const [deliveryFrequency, setDeliveriFrequency] = useState('week');
+    const [deliveryFrequency, setDeliveryFrequency] = useState('week');
     const [deliveryTimeslot, setDeliveryTimeslot] = useState('daytime');
     const [commentSection, setCommentSection] = useState('');
     const [agree, setAgree] = useState(false);
@@ -150,10 +150,10 @@ function App() {
                         id="delivery-field"
                         name="delivery"
                         value={deliveryFrequency}
-                        onChange={(e)=>setDeliveriFrequency(e.target.value)}
+                        onChange={(e)=>setDeliveryFrequency(e.target.value)}
                     >
                         <option value="week">Iedere week</option>
-                        <option value="two-week">Om de week</option>
+                        <option value="two-week">Elke twee weken</option>
                         <option value="month">Iedere maand</option>
                     </select>
                 </section>
@@ -164,7 +164,7 @@ function App() {
                         id="timeslot-field-daytime"
                         checked={deliveryFrequency === 'daytime'}
                         value='daytime'
-                        onChange={(e)=>setDeliveriFrequency(e.target.value)}
+                        onChange={(e)=>setDeliveryFrequency(e.target.value)}
                     />
                     <label htmlFor="timeslot-field-daytime">Overdag</label>
                         <input
