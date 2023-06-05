@@ -153,7 +153,7 @@ function App() {
                         onChange={(e)=>setDeliveriFrequency(e.target.value)}
                     >
                         <option value="week">Iedere week</option>
-                        <option value="two-week">Om de week</option>
+                        <option value="two-week">Elke twee weken</option>
                         <option value="month">Iedere maand</option>
                     </select>
                 </section>
